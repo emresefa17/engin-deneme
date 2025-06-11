@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes fadein {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fadein {
+  animation: fadein 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes fadein-down {
+  from { opacity: 0; transform: translateY(-40px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fadein-down {
+  animation: fadein-down 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes fadein-up {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fadein-up {
+  animation: fadein-up 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes typing {
+  from { width: 0; }
+  to { width: 100%; }
+}
+.animate-typing {
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 2px solid #2563eb;
+  width: 0;
+  animation: typing 2s steps(40, end) forwards;
+}
+@keyframes fadein-right {
+  from { opacity: 0; transform: translateX(60px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fadein-right {
+  animation: fadein-right 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+@keyframes fadein-left {
+  from { opacity: 0; transform: translateX(-60px); }
+  to { opacity: 1; transform: none; }
+}
+.animate-fadein-left {
+  animation: fadein-left 1s cubic-bezier(0.4, 0, 0.2, 1);
+}
+/* index.css'e ekleyin */
